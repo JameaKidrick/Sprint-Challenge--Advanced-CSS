@@ -194,9 +194,12 @@ nav a {
   margin: 0 auto;
 }
 .navBar {
+  position: fixed;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: rgba(255, 255, 255, 0.582);
 }
 .navBar h1 {
   width: 45%;
@@ -374,6 +377,18 @@ footer {
   width: 30%;
   text-align: center;
   padding: 2% 3%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn:hover {
+    background-color: white;
+    color: #23293B;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+    padding: 2% 3%;
+    margin-bottom: 5%;
+    padding: 6% 0%;
+  }
 }
 .home .walk .walk-img {
   width: 46%;

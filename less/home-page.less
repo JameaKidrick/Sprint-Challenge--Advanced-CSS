@@ -126,7 +126,15 @@
 
         &:hover{
           .btn-display(white, 30%, @header-font-color);
+          
+          @media @phone{
+            .btn-display(white, 100%, @header-font-color);
+            margin-bottom: 5%;
+            padding: 6% 0%;
+          }
         }
+
+        
       }
     }
 

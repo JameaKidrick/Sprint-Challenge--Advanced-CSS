@@ -33,15 +33,15 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
-    Adaptive - ??? Responsive - adjusted to be able to be used on most devices
+    Adaptive - adjusts to be used on different devices using specific browser widths. Responsive - adjusted to be able to be used on most devices by using not only the browser widths as variable but also percentages in CSS styling to allow better fluidity between devices.
 2. Describe what it means to be mobile first vs desktop first.
     Mobile first is when you originally build for the mobile then make your way up to desktop while desktop is the opposite where you build for desktop and make your way down to mobile.
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
-    ???
+    Since 62.5% = 10px and 10px = 1rem, it makes it easier for sizing in rems since you don't really have to calculate anything.
 4. How would you describe preprocessing to someone new to CSS?
-    It's a way to allow the computer to process the code before showing it ???
+    It's a way to extend the CSS (nest) then compile it to get rid of repeating code.
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
-    Favorite: I really like mix-ins/variables since it allows me to code faster since I don't have to repeat myself. I have trouble with ???
+    Favorite: I really like mix-ins/variables since it allows me to code faster since I don't have to repeat myself. At first, I had an issue with parametric mix-ins, fixed this issue with practice and research.
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
 ## Project Set Up
