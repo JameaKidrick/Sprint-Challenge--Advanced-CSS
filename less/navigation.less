@@ -1,1 +1,41 @@
 // Navigation code here
+
+.navBar{
+    // border: @main;
+    position:fixed;
+    width:100%;
+    .flexbox();
+    background-color:rgba(255, 255, 255, 0.582);
+
+    h1{
+        // border: @component;
+        .position();
+        text-align: center;
+        margin:1% auto;
+
+        @media @phone{
+            width: 90%;
+            margin:3% auto;
+        }
+    }
+
+    nav{
+        // border: @component;
+        .position();
+        padding:1% 0;
+        .flexbox();
+        flex-direction: row;
+        justify-content: space-around;
+
+        @media @phone{
+            width: 85%;
+            padding-bottom:1.5%;
+        }
+
+        a{
+            // border: @items;
+            text-decoration: none;
+            color:black;
+        }
+    }
+}

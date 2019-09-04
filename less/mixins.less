@@ -1,1 +1,21 @@
 // Mixins Here
+
+.flexbox(){
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.position(){
+    width:45%;
+    margin:0 auto;
+}
+
+.btn-display(@bg-color, @width, @font-color){
+    background-color:@bg-color;
+    color: @font-color;
+    border-radius:4px;
+    width:@width;
+    text-align: center;
+    padding: 2% 3%;
+}

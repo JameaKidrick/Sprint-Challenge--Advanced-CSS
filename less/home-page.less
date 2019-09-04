@@ -4,12 +4,29 @@
 
   .intro {
 
+    img{
+      border-radius:8px;
+
+      @media @phone{
+        width: 100%;
+        border-radius:3px;
+      }
+    }
+
     h2 {
       padding: 15px;
+
+      @media @phone{
+        padding:4.5%;
+      }
     }
 
     p {
       padding:0 15px;
+      
+      @media @phone{
+        padding:0% 4.5%;
+      }
     }
   
   }
@@ -24,11 +41,32 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone{
+        .position();
+        width:90%;
+        margin: 3% auto;
+        border-radius: 15px;
+      }
+    }
+
+    @media @phone{
+      .sky{
+        display: none;
+      }
+
+      .launch{
+        display: none;
+      }
     }
   }
 
   .visit-planets {
     padding: 15px;
+
+    @media @phone{
+      padding:0% 5%;
+    }
 
     h3 {
       margin-top: 11px;
@@ -46,24 +84,70 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      margin-top:7%;
+      padding: 0;
+      flex-direction: column-reverse;
+    }
+
     .walk-text {
       width: 50%;
 
+      @media @phone{
+        width:100%;
+        padding:0% 5%;
+    
+      }
+
       h3 {
         margin-bottom: 10px;
+
+        @media @phone{
+          margin-bottom: 2%;
+        }
       }
 
       p {
         margin-bottom: 26px;
+        @media @phone{
+          margin-bottom: 5%;
+        }
       }
 
       .btn {
+        .btn-display(@header-font-color, 30%, white);
+        cursor: pointer;
+
+        @media @phone{
+          .btn-display(@header-font-color, 100%, white);
+          margin-bottom: 5%;
+          padding: 6% 0%;
+        }
+
+        &:hover{
+          .btn-display(white, 30%, @header-font-color);
+          
+          @media @phone{
+            .btn-display(white, 100%, @header-font-color);
+            margin-bottom: 5%;
+            padding: 6% 0%;
+          }
+        }
+
+        
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone{
+        .position();
+        width:90%;
+        margin: 4% auto;
+        border-radius: 15px;
+      }
       
       img {
         width: 100%;
